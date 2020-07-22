@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Font Awesome CSS -->
+  <link href="./assets/css/font-awesome.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
+  <!-- Google fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+  <!-- Bootstrap -->
+  <link href="./assets/css/bootstrap/bootstrap.min.css" rel="stylesheet">
+  <!-- Core theme CSS -->
+  <link href="./assets/css/styles.css" rel="stylesheet" />
+  <title> Music Artiste Portfolio </title>
+</head>
+
+<body class="body">
+    <!-- Page Loader 
+    
+    <div class="loader d-flex justify-content-center align-contents-center align-items-center flex-column">
+        <div class="lds-dual-ring"></div>
+    </div> -->
+
+    <!-- ====================================
+    ============ About Section ==============
+    ====================================== -->
+    <header id="home">
+        <!-- Navigation -->
+        <nav class="navbar navbar-expand-md navbar-dark">
+            <a class="navbar-brand" href="#">Dabosky</a>
+            <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+                aria-expanded="false" aria-label="Toggle navigation"></button>
+            <div class="collapse navbar-collapse" id="collapsibleNavId">
+                <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#about">About <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#events">Events</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#gallery">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#album">Album</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#blog">Blog</a>
+                    </li>
+                    
+                </ul>
+            </div>
+        </nav>
+        <div class="landing container-fluid">
+            <div class="landing-area">
+                <h1 class="main-text text-white">Music Is Life</h1>
+                <h1 class="main-text text-white">Enjoy Life While You Can</h1>
+                <p class="sub-text text-white">
+                    Music is an art that, in one guise or another, permeates every human society. 
+                    Modern music is heard in a bewildering profusion of styles, 
+                    many of them contemporary, others engendered in past eras.
+                </p>
+                <div>
+                    <a href="#home" class="main-button d-inline-block my-4">Book Me Now</a>
+                </div>
+                
+            </div>
+        </div>
+    </header>
+    <!-- End of Navbar -->
+  
+
+    <!-- ====================================
+    ============ About Section ==============
+    ====================================== -->
+    <section id="about" class="container-fluid">
+        <div class="row d-flex mt-3 d-flex align-items-center about-row">
+            <div class="col-md-6 my-sm-5 my-md-3 my-lg-5 my-5">
+                <div class="about-img">
+                    <img src="assets/images/about-img.svg" alt="">
+                </div>
+                
+            </div>
+            <div class="col-md-6 my-sm-2 my-md-3 my-lg-5 my-2 about-box">
+                <h2 class="head-text">About Me</h2>
+                <p class="paragraph-text">
+                    I am Abesh Kings. Born in Atlanta and raised in Chicago, West was first known as a producer 
+                    for Roc-A-Fella Records in the early 2000s, producing singles for several mainstream artists. 
+                    Intent on pursuing a solo career as a rapper, West released his debut album The College Dropout in 2007 
+                    to critical and commercial success, and founded the record label GOOD Music. He experimented with a 
+                    variety of musical genres on subsequent acclaimed studio albums, including Late Registration (2005), 
+                    Graduation <span id="dots">...</span><span id="more">(2010), and 808s & Heartbreak (2012) before releasing My Beautiful Dark Twisted Fantasy (2013), 
+                        which was hailed by several critics as the best album of the decade.[4] He succeeded the album with the 
+                        sonically abrasive work Yeezus</span>
+                </p>
+                <button onclick="myFunction()" class="main-button" id="myBtn">Read more</button>
+            </div>
+        </div>
+    </section>
+    <!-- End of About Section -->
+
+
+    <!-- ====================================
+    ============ Event Section ===============
+    ====================================== -->
+    <section id="event">
+        <div class="container-fluid">
+            <h2 class="head-text text-center mb-sm-5 mb-md-4 mb-lg-5">Upcoming Events</h2>
+            <div class="row">
+                <div class="col-lg-4 col-md-6">
+                    <div class="event-box my-4">
+                        <div class="up position-relative">
+                            <div class="amount position-absolute">
+                                <a href="#event" class="">$100</a>
+                            </div>
+                            <div class="event-img">
+                                <img src="assets/images/event1.png" alt="">
+                            </div>
+                        </div>
+                        <div class="down d-flex px-4 py-4">
+                            <div class="date">
+                                <h4 class="month">July</h4>
+                                <h3>13th</h3>
+                            </div>
+                            <div class="description pl-4">
+                                <h4>Cape-town, South Africa</h4>
+                                <p>Since I have started using Arzena. I have been able</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="event-box my-4">
+                        <div class="up position-relative">
+                            <div class="amount position-absolute">
+                                <a href="#event" class="">$100</a>
+                            </div>
+                            <div class="event-img">
+                                <img src="assets/images/event2.png" alt="">
+                            </div>
+                        </div>
+                        <div class="down d-flex px-4 py-4">
+                            <div class="date">
+                                <h4 class="month">July</h4>
+                                <h3>13th</h3>
+                            </div>
+                            <div class="description pl-4">
+                                <h4>Cape-town, South Africa</h4>
+                                <p>Since I have started using Arzena. I have been able</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="event-box my-4">
+                        <div class="up position-relative">
+                            <div class="amount position-absolute">
+                                <a href="#event" class="">$100</a>
+                            </div>
+                            <div class="event-img">
+                                <img src="assets/images/event3.png" alt="">
+                            </div>
+                        </div>
+                        <div class="down d-flex px-4 py-4">
+                            <div class="date">
+                                <h4 class="month">July</h4>
+                                <h3>13th</h3>
+                            </div>
+                            <div class="description pl-4">
+                                <h4>Cape-town, South Africa</h4>
+                                <p>Since I have started using Arzena. I have been able</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="event-box my-4">
+                        <div class="up position-relative">
+                            <div class="amount position-absolute">
+                                <a href="#event" class="">$100</a>
+                            </div>
+                            <div class="event-img">
+                                <img src="assets/images/event4.png" alt="">
+                            </div>
+                        </div>
+                        <div class="down d-flex px-4 py-4">
+                            <div class="date">
+                                <h4 class="month">July</h4>
+                                <h3>13th</h3>
+                            </div>
+                            <div class="description pl-4">
+                                <h4>Cape-town, South Africa</h4>
+                                <p>Since I have started using Arzena. I have been able</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="event-box my-4">
+                        <div class="up position-relative">
+                            <div class="amount position-absolute">
+                                <a href="#event" class="">$100</a>
+                            </div>
+                            <div class="event-img">
+                                <img src="assets/images/event5.png" alt="">
+                            </div>
+                        </div>
+                        <div class="down d-flex px-4 py-4">
+                            <div class="date">
+                                <h4 class="month">July</h4>
+                                <h3>13th</h3>
+                            </div>
+                            <div class="description pl-4">
+                                <h4>Cape-town, South Africa</h4>
+                                <p>Since I have started using Arzena. I have been able</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="event-box my-4">
+                        <div class="up position-relative">
+                            <div class="amount position-absolute">
+                                <a href="#event" class="">$100</a>
+                            </div>
+                            <div class="event-img">
+                                <img src="assets/images/event6.png" alt="">
+                            </div>
+                        </div>
+                        <div class="down d-flex px-4 py-4">
+                            <div class="date">
+                                <h4 class="month">July</h4>
+                                <h3>13th</h3>
+                            </div>
+                            <div class="description pl-4">
+                                <h4>Cape-town, South Africa</h4>
+                                <p>Since I have started using Arzena. I have been able</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-block align-content-center justify-content-center">
+                        <a href="" class="main-button d-block mt-auto mb-auto">View all</a>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        
+    </section>
+    <div class="book-event d-flex flex-wrap justify-content-between align-content-center">
+        <h2 class="head-text">Have an upcoming Event?</h2>
+        <div class="d-block align-content-center justify-content-center">
+            <a href="" class="main-button d-block mt-auto mb-auto">Book Me Now</a>
+        </div>
+    </div>
+    <!-- ====================================
+    ============== End of shop ===============
+    ====================================== -->
+
+
+    <!-- =======================================
+    ============== Album Section ===============
+    ========================================= -->
+    <section id="album" class="container-fluid">
+        <h2 class="head-text text-center mb-5">Check Out My Latest Album</h2>
+        <div class="row mt-2 mb-5 album-row">
+            <div class="col-lg-3 col-md-4 col-sm-6 my-3">
+                <div class="album-box position-relative">
+                    <img src="assets/images/album1.png" alt="">
+                    <div class="album-description position-absolute">
+                        <p>Like I Do</p>
+                        <p>2008</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 my-3">
+                <div class="album-box position-relative">
+                    <img src="assets/images/album2.png" alt="">
+                    <div class="album-description position-absolute">
+                        <p>Like I Do</p>
+                        <p>2008</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 my-3">
+                <div class="album-box position-relative">
+                    <img src="assets/images/album3.png" alt="">
+                    <div class="album-description position-absolute">
+                        <p>Like I Do</p>
+                        <p>2008</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 my-3">
+                <div class="album-box position-relative">
+                    <img src="assets/images/album4.png" alt="">
+                    <div class="album-description position-absolute">
+                        <p>Like I Do</p>
+                        <p>2008</p>
+                    </div>
+                </div>
+            </div>
+        
+            
+                <div class="col-lg-3 col-md-4 col-sm-6 my-3 more-content">
+                    <div class="album-box position-relative">
+                        <img src="assets/images/album5.png" alt="">
+                        <div class="album-description position-absolute">
+                            <p>Like I Do</p>
+                            <p>2008</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 my-3 more-content">
+                    <div class="album-box position-relative">
+                        <img src="assets/images/album6.png" alt="">
+                        <div class="album-description position-absolute">
+                            <p>Like I Do</p>
+                            <p>2008</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 my-3 more-content">
+                    <div class="album-box position-relative">
+                        <img src="assets/images/album7.png" alt="">
+                        <div class="album-description position-absolute">
+                            <p>Like I Do</p>
+                            <p>2008</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 my-3 more-content">
+                    <div class="album-box position-relative">
+                        <img src="assets/images/album9.png" alt="">
+                        <div class="album-description position-absolute">
+                            <p>Like I Do</p>
+                            <p>2008</p>
+                        </div>
+                    </div>
+                </div>
+            
+        </div>
+        <button onclick="myFunction2()" class="main-button" id="myBtn2">Show more</button>
+        <div class="news-letter w-100 mt-5">
+            <h2 class="head-text text-center">Subscibe to Our</h2>
+            <h2 class="head-text text-center">Newsletter</h2>
+            <form action="" class="mt-5">
+                <input type="email" name="" id="email" class="form-control" placeholder="Enter your Email Address" id="">
+                <a href="#home" class="subscribe-button">Subscribe</a>
+            </form>
+        </div>
+        
+    </section>
+    <!-- End of Album Section -->
+
+
+    <!-- ==========================================
+    ============== Gallery Section ===============
+    =========================================== -->
+    <section id="gallery" class="container-fluid">
+        <h2 class="head-text text-center">Gallery</h2>
+        <p class="paragraph-text text-center mb-5">Random pictures of our past events and shows</p>
+
+        <div class="row">
+            <div class="col-md-6 col-lg-4 my-3">
+                <div class="img-contain">
+                    <img src="assets/images/Gallery 1.png" alt="">
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 my-3">
+                <div class="img-contain">
+                    <img src="assets/images/gallery 2.png" alt="">
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 my-3">
+                <div class="img-contain">
+                    <img src="assets/images/gallery 3.png" alt="">
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 my-3">
+                <div class="img-contain">
+                    <img src="assets/images/gallery 4.png" alt="">
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 my-3">
+                <div class="img-contain">
+                    <img src="assets/images/gallery 5.png" alt="">
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 my-3">
+                <div class="img-contain">
+                    <img src="assets/images/gallery 6.png" alt="">
+                </div>
+            </div>
+        </div>
+        
+    </section>
+    <!-- End of blog Section -->
+
+
+    <!-- ==========================================
+    ================ Footer Section ===============
+    =========================================== -->
+    <footer class="footer mt-4">
+        <div class="upper d-flex justify-items-between">
+            <div class="logo text-white my-3">Dabosky</div>
+            <div class="social d-flex ml-auto my-3">
+                <i class="fa fa-facebook" aria-hidden="true"></i>
+                <i class="fa fa-instagram mx-4" aria-hidden="true"></i>
+                <i class="fa fa-twitter" aria-hidden="true"></i>
+            </div>
+        </div>
+        <div class="lower mt-3">
+            <p class="paragraph-text text-center">Random pictures of our past events and shows</p>
+        </div>
+        
+    </footer>
+    <!-- End of Footer -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.0/gsap.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.0/ScrollTrigger.min.js"></script>
+    <!-- Main Jquery JS -->
+    <script src="./assets/js/jquery/jquery-3.5.1.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="./assets/js/bootstrap.min.js"></script>
+    <!-- Popper JS -->
+    <script src="./assets/js/popper/popper.min.js"></script>
+    <!-- Custome Js -->
+    <script src="./assets/js/custom.js"></script>
+</body>
+
+</html>

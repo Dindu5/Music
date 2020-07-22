@@ -1,0 +1,498 @@
+/* MAIN STYLE SHEET FOR: MUSIC ARTISTE PORTFOLIO WEBPAGE */
+
+/* =================================================== */
+/* ================= 1. Root Styles ================== */
+/* =================================================== */
+:root {
+	--main-font: 'Montserrat', sans-serif;
+	--primary-color: #ffcb15;
+	--background-gray: #f6f6f6;
+	--text-grey: #878787;
+	--background-black: #080013;
+	--white: #ffffff;
+}
+
+/* =================================================== */
+/* =============== 2. Universal Styles =============== */
+/* =================================================== */
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+	font-family: var(--main-font);
+}
+body {
+	scroll-behavior: smooth;
+	overflow-x: hidden;
+}
+img {
+	width: 100%;
+	height: auto;
+}
+/* ================ 2.1 Scroll Bar ================ */
+::-webkit-scrollbar {
+	width: 5px;
+	background-color: #ffcc1581;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+	box-shadow: inset 0 0 5px rgba(8, 8, 8, 0.26);
+	border-radius: 5px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+	background: var(--primary-color);
+	border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+	background: #b30000;
+	cursor: pointer;
+}
+/* ====== Page Loader ======= */
+.lds-dual-ring {
+	display: inline-block;
+	width: 35vh;
+	height: 35vh;
+}
+.lds-dual-ring:after {
+	content: " ";
+	display: block;
+	width: 35vh;
+	height: 35vh;
+	margin: 8px;
+	border-radius: 50%;
+	border: 4px solid var(--white);
+	border-color: var(--white) transparent var(--white) transparent;
+	animation: lds-dual-ring 1.2s linear infinite;
+}
+.loader {
+	position: fixed;
+	top: 0;
+	width: 100vw;
+	height: 100vh;
+	z-index: 99;
+	background-color: var(--primary-color);
+}
+@keyframes lds-dual-ring {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+@keyframes fadeOut {
+	100% {
+		opacity: 0;
+		visibility: hidden;
+	}
+}
+.loader.done {
+	animation: fadeOut 1s;
+	animation-fill-mode: forwards;
+}
+
+/* =================================================== */
+/* ================= 2. Header Styles ================ */
+/* =================================================== */
+header {
+	background-image: url(../images/Bg\ Image.png);
+	background-size: cover;
+	background-position: center;
+	height: 700px;
+}
+.navbar {
+	padding: 2rem 10vw !important;
+}
+.navbar-brand {
+	font-size: 14px !important;
+}
+.navbar-brand:hover {
+	color: var(--primary-color) !important;
+	transition: all 0.6s;
+}
+.nav-item {
+	margin-left: 1.5rem;
+}
+.nav-link {
+	font-size: 12px !important;
+	color: var(--white) !important;
+}
+.nav-link.active,
+.nav-link:hover,
+.nav-link:focus {
+	color: var(--primary-color) !important;
+	transition: all 0.6s;
+}
+.landing {
+	padding: 2rem 10vw;
+	margin-top: 8%;
+}
+.landing-area h1 {
+	font-family: var(--main-font);
+	font-size: 3.2vw;
+	font-weight: 600;
+	color: var(--white);
+}
+.landing-area p {
+	color: var(--white);
+	font-size: 0.8rem;
+	width: 50%;
+	line-height: 2rem;
+}
+.main-button {
+	font-size: 0.8rem;
+	background-color: var(--primary-color);
+	border-radius: 40px;
+	padding: 0.5rem 1.5rem;
+	color: var(--background-black);
+	text-decoration: none;
+	transition: all 0.6s;
+}
+.main-button:hover {
+	background-color: #ffc800;
+	transform: translateY(-4px);
+	text-decoration: none;
+	color: var(--background-black);
+	transition: all 0.6s;
+}
+
+/* =================================================== */
+/* ================== 2. About Styles ================= */
+/* =================================================== */
+
+#about {
+	padding: 4rem 10vw;
+}
+.about-box {
+	padding-left: 5rem;
+}
+.head-text {
+	font-size: 2rem;
+	font-weight: 600;
+	line-height: 3.3rem;
+}
+.paragraph-text {
+	font-size: 0.9rem;
+	line-height: 1.8rem;
+	color: var(--background-black);
+}
+
+/* =================================================== */
+/* ================== 2. Events Styles ================= */
+/* =================================================== */
+
+#event {
+	background-color: var(--background-gray);
+	padding: 4rem 10vw;
+}
+.event-box {
+	background: #ffffff;
+	box-shadow: 0px 6px 18px rgba(251, 251, 251, 0.25);
+	border-radius: 20px;
+}
+.amount {
+	top: 1.5rem;
+	left: 1rem;
+}
+.amount a {
+	padding: 0.5rem 0.5rem;
+	background-color: var(--white);
+	font-size: 1rem;
+	color: var(--text-grey);
+	border-radius: 7px;
+}
+.amount a:hover {
+	text-decoration: none;
+	color: var(--primary-color);
+	border: 1px solid var(--primary-color);
+}
+.date h4 {
+	color: var(--primary-color);
+	font-size: 1.1rem;
+	font-weight: 500;
+}
+.date h3 {
+	font-size: 1.6rem;
+	font-weight: 600;
+}
+.description h4 {
+	font-size: 1rem;
+	font-weight: 600;
+}
+.description p {
+	font-size: 1rem;
+	color: var(--text-grey);
+}
+.book-event {
+	background-image: url(../images/event-bg.png);
+	background-position: center;
+	background-size: cover;
+	padding: 7rem 9rem;
+}
+.book-event h2 {
+	font-weight: 400;
+	color: var(--white);
+}
+
+/* =================================================== */
+/* ================== 2. Album Styles ================= */
+/* =================================================== */
+#album {
+	padding: 6rem 9.9vw;
+}
+.album-description {
+	bottom: 1.5rem;
+	left: 1rem;
+}
+.album-description p {
+	font-size: 1rem;
+	color: white;
+}
+.news-letter {
+	background-color: var(--primary-color);
+	border-radius: 20px;
+	margin: 0 5px;
+	padding: 5rem 20vw;
+}
+.news-letter h2 {
+	line-height: 30px;
+}
+form {
+	display: flex;
+}
+#email {
+	box-shadow: none !important;
+	outline: none !important;
+	border: none !important;
+	border-radius: 10px;
+	color: var(--text-grey) !important;
+	font-size: 0.9rem !important;
+}
+#email:hover,
+#email:active,
+#email:focus {
+	border: 1px solid var(--secondary-color);
+}
+.subscribe-button {
+	font-size: 0.8rem;
+	background-color: var(--background-black);
+	border-radius: 10px;
+	padding: 0.5rem 1.5rem;
+	color: var(--white);
+	text-decoration: none;
+	transform: translateX(-10px);
+	z-index: 1;
+	transition: all 0.6s;
+}
+.subscribe-button:hover,
+.subscribe-button:focus,
+.subscribe-button:active {
+	text-decoration: none;
+}
+
+/* =================================================== */
+/* ================== 2. Gallery Styles ================= */
+/* =================================================== */
+
+#gallery {
+	padding: 2rem 9.9vw;
+}
+#gallery p {
+	color: var(--text-grey);
+}
+
+/* =================================================== */
+/* ================== 2. Footer Styles ================= */
+/* =================================================== */
+
+footer {
+	background-color: var(--background-black);
+	padding: 2rem 10vw;
+}
+.social i {
+	color: var(--white);
+}
+.social i:hover {
+	color: var(--primary-color);
+	cursor: pointer;
+	transition: all 0.6s;
+}
+.lower p {
+	margin: 0;
+	color: #9c9c9c;
+}
+
+/* =================================================== */
+/* ================== 2. Responsive Styles ================= */
+/* =================================================== */
+
+/* ========== Header & Navigation ===========*/
+@media screen and (max-width: 978px) {
+	/* ========== Header & Navigation ===========*/
+	.nav-link {
+		font-size: 12px !important;
+	}
+	.landing-area h1 {
+		font-size: 3rem;
+		font-weight: 600;
+	}
+	.landing-area p {
+		font-size: 0.8rem;
+	}
+	.main-button {
+		font-size: 0.8rem;
+	}
+}
+
+@media screen and (max-width: 766px) {
+	/* ========== Header & Navigation =========== */
+	.landing {
+		padding: 2rem 10vw;
+		height: 70%;
+		margin-top: 2%;
+	}
+	.landing-area h1 {
+		font-size: 2.8rem;
+		text-align: center;
+	}
+	.landing-area p {
+		text-align: center;
+		font-size: 0.8rem;
+		width: 100%;
+		margin: 15% 0;
+		line-height: 1.5rem;
+		transition: all 0.6s;
+	}
+	.main-button {
+		font-size: 0.8rem;
+		padding: 0.5rem 1.5rem;
+		display: table !important;
+		margin-left: auto;
+		margin-right: auto;
+		text-align: center;
+	}
+
+	/* ========== About Styles ===========*/
+	.about-box {
+		padding-left: 15px;
+	}
+	.about-box h2 {
+		text-align: center;
+	}
+	.about-box p {
+		transition: all 1s;
+	}
+	.about-row {
+		flex-direction: column-reverse;
+	}
+	#more {
+		display: none;
+		transition: all 1s;
+	}
+	#myBtn {
+		border: none;
+		margin-top: 3rem;
+	}
+	.more-content {
+		display: none;
+	}
+
+	/* ========== Event Styles =========== */
+	.amount a {
+		font-size: 0.9rem;
+	}
+	.date h4 {
+		font-size: 1rem;
+	}
+	.date h3 {
+		font-size: 1.4rem;
+	}
+	.description p {
+		font-size: 0.9rem;
+	}
+	.book-event {
+		flex-direction: column;
+		text-align: center;
+		padding: 5.5rem 4rem;
+	}
+	.book-event h2 {
+		margin-bottom: 3rem;
+	}
+	.amount {
+		top: 2rem;
+		left: 2rem;
+	}
+	/* ========== Album Styles =========== */
+	form {
+		display: block !important;
+	}
+	.news-letter {
+		margin: 0 5px;
+		padding: 5rem 5vw;
+	}
+	.news-letter h2 {
+		line-height: 30px;
+	}
+	#email {
+		font-size: 0.9rem !important;
+	}
+	.subscribe-button {
+		font-size: 0.8rem;
+		display: table;
+		padding: 0.5rem 1.5rem;
+		margin-left: auto;
+		margin-right: auto;
+		transform: translateY(1rem);
+	}
+}
+@media screen and (max-width: 575px) {
+	.navbar {
+		padding: 1rem 5vw !important;
+	}
+	.landing {
+		padding: 2rem 5vw;
+		margin-top: 10%;
+	}
+	.landing-area h1 {
+		font-size: 2rem;
+		line-height: 3.5rem;
+	}
+	.landing-area p {
+		margin: 20% 0;
+	}
+	#about {
+		padding: 1.8rem 5vw;
+	}
+	.head-text {
+		font-size: 1.6rem;
+		font-weight: 600;
+		line-height: 4rem;
+	}
+	#event {
+		padding: 1.8rem 2.5vw;
+	}
+	#album {
+		padding: 1.8rem 3vw;
+	}
+	.album-row {
+		padding: 1.8rem 8vw;
+	}
+	.news-letter {
+		padding: 5rem 5vw;
+	}
+	.upper {
+		flex-direction: column;
+	}
+	.logo,
+	.social {
+		margin-right: auto;
+		margin-left: auto;
+	}
+}
