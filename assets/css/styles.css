@@ -89,7 +89,7 @@ header {
 	margin-bottom: 6rem;
 }
 .overlay {
-	background-image: url(../images/Bg\ Image.jpg);
+	background-image: url(../images/IMGb.png);
 	background-size: cover;
 	background-position: center;
 	animation-name: kenburns-bottom-right;
@@ -358,7 +358,7 @@ header {
 	color: var(--text-grey);
 }
 .book-event {
-	background-image: url(../images/event-bg.png);
+	background-image: url(../images/IMGh.png);
 	background-position: center;
 	background-size: cover;
 	padding: 7rem 9rem;
