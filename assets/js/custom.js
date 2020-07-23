@@ -40,10 +40,10 @@ let closeMenu = true;
 function myFunction2() {
 	var btnContent = document.getElementById('myBtn2');
 	if (!closeMenu) {
-		btnContent.innerHTML = 'Show less';
+		btnContent.innerHTML = 'Show More';
 		closeMenu = true;
 	} else {
-		btnContent.innerHTML = 'Show more';
+		btnContent.innerHTML = 'Show Less';
 		closeMenu = false;
 	}
 }
