@@ -9,7 +9,7 @@
 <head>
   <meta charset="utf-8" />
 
-  <title> Wedding Planner - Documentation</title>
+  <title> Music Artiste Portfolio - Documentation</title>
 
   <meta name="description" content="" />
   <meta name="author" content="Team Syntax" />
@@ -164,13 +164,13 @@
   </div>
   <div id="documenter_content">
     <section id="documenter_cover">
-      <h1> Wedding Planner </h1>
+      <h1> Music Artiste Portfolio </h1>
       <h2>Responsive HTML5 Template</h2>
       <div id="documenter_buttons"></div>
       <hr />
       <ul>
-        <li>created: 11/07/2020</li>
-        <li>latest update: 11/07/2020</li>
+        <li>created: 22/07/2020</li>
+        <li>latest update: 23/07/2020</li>
         <li>by: @Dindu</li>
 
         <li>
@@ -190,7 +190,8 @@
       <pre class="prettyprint lang-html linenums">
 - assets/css                    (Template CSS)
 - assets/images                    (All Images)
-- assets/js                     (Template JS)</pre>
+- assets/js                     (Template JS)
+- assets/fonts                    (Font-Awesome Icons)</pre>
       <p>
         &nbsp;
       </p>
@@ -255,7 +256,11 @@
       <pre class="prettyprint lang-html linenums">
 - assets/
   - css/
-    - styles.css                - (Main CSS file) 
+    - styles.css                - (Main CSS file)
+    - animations.css              - (Main CSS animations file)
+    - aos.css                    - (Animate On Scroll CSS file)
+    - font-awesome.css           - (Font-Awesome Icons CSS file)
+    - lightbox.css                - (Lightbox CSS file) 
     - bootstrap/bootstrap.min.css - (Bootstrap Minified CSS file)
 
 </pre>
@@ -290,6 +295,10 @@
 &lt;script src=&quot;./assets/js/popper/popper.min.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt; 
 &lt;!-- Custom JS --&gt;
 &lt;script src=&quot;./assets/js/custom.js&quot;&gt;&lt;/script&gt;
+&lt;!-- AOS JS --&gt;
+&lt;script src=&quot;./assets/js/aos.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt; 
+&lt;!-- Image LightBox --&gt;
+&lt;script src=&quot;./assets/js/lightbox.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt; 
 </pre>
       </div>
       <p>&nbsp;</p>
@@ -301,7 +310,7 @@
       </div>
       <div>
         To change the embedded font, please take a look in the head part of
-        assets/css/theme.css:
+        assets/css/styles.css:
       </div>
       <div>
         &nbsp;
@@ -329,13 +338,11 @@ Change here the font used
         <div>
           <pre class="prettyprint lang-css linenums">
 :root {
-  --header-font: 'Cormorant Infant', serif;
-  --text-font: 'Muli', sans-serif;
-  --button-text: 'Quicksand', sans-serif;
-  --primary-color: #fc3c3c;
-  --secondary-color: #333333;
-  --text-grey: #a3a3a3;
-  --background-gray: #fafafa;
+  --main-font: 'Montserrat', sans-serif;
+  --primary-color:#ffcb15;
+  --background-gray: #f6f6f6;
+  --text-grey: #878787;
+  --background-black: #fafafa;
   --white: #ffffff;
 }
             </pre>
@@ -348,19 +355,25 @@ Change here the font used
         <hr class="notop" />
       </div>
       <div>
-        All font are located in the images directory
+        All icons used are either located in the images directory or part font-awesome
       </div>
       <div>
         &nbsp;
       </div>
 
       <div>
+        <p>
+          Font-Awesome Icons were used for some icons and they were used this way
+        </p>
         &nbsp;
+        <pre class="prettyprint lang-html linenums">
+&lt;i class=&quot;fa fa-facebook&quot;&gt; <span style="font-family: Arial, Verdana, sans-serif;"> &lt;/i&gt;</span>
+          </pre>
       </div>
       <div>
         <p>
-          We are using svg fonts which you can get more and add to
-          assets/images
+          The svg icons which where used can get seen and modified in
+          assets/images folders
         </p>
       </div>
     </section>
@@ -374,7 +387,7 @@ Change here the font used
         image logo
       </p>
       <pre class="prettyprint lang-html linenums">
-&lt;a class=&quot;logo&quot; href=&quot;#&quot;&gt; &lt;img src=&quot;./assets/images/...path to your logo<span style="font-family: Arial, Verdana, sans-serif;">... path to your image logo ...</span><span style="font-family: Arial, Verdana, sans-serif;">&quot; alt=&quot;logo&quot; /&gt; &lt;/a&gt;</span>
+&lt;a class=&quot;navbar-brand&quot; href=&quot;#&quot;&gt;Dabosky<span style="font-family: Arial, Verdana, sans-serif;"> &lt;/a&gt;</span>
 </pre>
     </section>
     <section id="sliders">
@@ -383,67 +396,20 @@ Change here the font used
         <hr class="notop" />
       </div>
       <div>
-        Bootstrap Carousel is used as the default slider but in other to match the
-        design, changes and adjustments were added.
+        Due to the design, no image sliders were used
       </div>
       <div>
         &nbsp;
       </div>
       <div>
         <div>
-          <div>
-            The entire page has about three &#39;sliders&#39; and each slide
-            has &#39;&lt;div class=&quot;carousel slide&quot;&gt;&#39; wrapper
-            for easy find where slide html code start. If you wont remove some
-            slide just remove div with all content like this &#39;&lt;div
-            class=&quot;item&quot;&gt;&#39;
-          </div>
+          
           <div>
             &nbsp;
           </div>
         </div>
-        <pre class="prettyprint lang-html linenums">
-&lt;!-- Sliders --&gt;
-&lt;div id=&quot;carouselId&quot; class=&quot;carousel slide first-slide&quot; data-ride=&quot;carousel&quot;>
-  &lt;ol class=&quot;carousel-indicators position-absolute&quot;>
-    &lt;li data-target=&quot;#carouselId&quot; data-slide-to=&quot;0&quot; class=&quot;active&quot;>&lt;/li>
-    &lt;li data-target=&quot;#carouselId&quot; data-slide-to=&quot;1&quot;>&lt;/li>
-    &lt;li data-target=&quot;#carouselId&quot; data-slide-to=&quot;2&quot;>&lt;/li>
-  &lt;/ol>
-  &lt;div class=&quot;carousel-inner d-flex align-items-center&quot; role=&quot;listbox&quot;>
-    &lt;div class=&quot;carousel-item active&quot;>
-      &lt;p class=&quot;paragraph-text-slide text-white m-auto&quot;>
-        The #1 ranked. Helped over 50,000 couples around the country 
-        and we look forward to supporting you along your wedding 
-        planning journey.
-      &lt;/p>
-    &lt;/div>
-    &lt;div class=&quot;carousel-item&quot;>
-          --- Secound Carousel Content ---
-    &lt;/div>
-    &lt;div class=&quot;carousel-item&quot;>
-      &lt;div>
-          --- Third Carousel Content---
-        &lt;/p>
-      &lt;/div>
-    &lt;/div>
-  &lt;/div>
-  &lt;a class=&quot;carousel-control-prev&quot; href=&quot;#carouselId&quot; role=&quot;button&quot; data-slide=&quot;prev&quot;&gt;
-    &lt;i class=&quot;fa fa-arrow-left&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;
-    &lt;span class=&quot;sr-only&quot;&gt;Previous&lt;/span&gt;
-  &lt;/a&gt;
-  &lt;a class=&quot;carousel-control-next&quot; href=&quot;#carouselId&quot; role=&quot;button&quot; data-slide=&quot;next&quot;&gt;
-    &lt;i class=&quot;fa fa-arrow-right&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;
-    &lt;span class=&quot;sr-only&quot;&gt;Next&lt;/span&gt;
-  &lt;/a&gt;
-&lt;/div&gt;
-
-&lt;!-- /.Header Carousel --&gt;</pre>
+        
       </div>
-      <p>
-        You can find more documentation here&nbsp;<a href="https://getbootstrap.com/guide/"
-          target="_blank">https://getbootstrap.com</a>
-      </p>
     </section>
     <section id="google_map">
       <div class="page-header">
