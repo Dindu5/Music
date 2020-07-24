@@ -139,6 +139,7 @@ header {
 .navbar-toggler {
 	outline: none !important;
 	border: none !important;
+	color: var(--white) !important;
 }
 .navbar {
 	padding: 2rem 10vw !important;
@@ -695,7 +696,10 @@ footer {
 
 @media screen and (max-width: 766px) {
 	/* ========== Header & Navigation =========== */
-
+	.navbar-collapse {
+		box-shadow: 0 2px 35px #00000065 !important;
+		background: #00000099;
+	}
 	.nav-link {
 		font-size: 0.9rem;
 	}
