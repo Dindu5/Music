@@ -154,11 +154,15 @@ header {
 	font-size: 1.1rem;
 }
 .nav-item {
-	margin-left: 1.5rem;
+	margin-left: 2rem;
 }
 .nav-item {
 	font-size: 1rem !important;
 	color: var(--white) !important;
+}
+.nav-link {
+	padding-left: 0 !important;
+	padding-right: 0 !important;
 }
 .nav-link.active,
 .nav-link:hover,
@@ -659,13 +663,18 @@ footer {
 	padding: 2rem 10vw;
 	position: relative;
 }
-.social i {
-	color: var(--white);
+.icon:hover {
+	transform: translateY(-3px);
+	transition: all 0.6s;
 }
-.social i:hover {
-	color: var(--primary-color);
+.icon:hover path {
+	fill: var(--primary-color);
 	cursor: pointer;
 	transition: all 0.6s;
+}
+.icon:nth-child(2):hover path {
+	stroke: var(--primary-color) !important;
+	fill: none !important;
 }
 .lower p {
 	margin: 0;
@@ -702,6 +711,10 @@ footer {
 	}
 	.nav-link {
 		font-size: 0.9rem;
+	}
+	.nav-item {
+		margin-left: auto;
+		margin-right: auto;
 	}
 	header {
 		margin-bottom: 8rem;
@@ -826,8 +839,8 @@ footer {
 		margin-top: 1rem;
 	}
 	.navbar-collapse {
-		box-shadow: 0 2px 35px #00000065 !important;
-		background: #00000099;
+		box-shadow: 0 2px 35px #000000ce !important;
+		background: #000000d7;
 	}
 	.navbar {
 		padding: 1rem 5vw !important;
